@@ -1,26 +1,28 @@
 # design-claude-skills
 
-A collection of Claude Code skills for designers working with Sketch.
+专为设计师打造的 Claude Code 技能包，让 Claude 更懂 Sketch 设计工作流。
 
-## Installation
+## 安装方法
 
-```bash
-/plugin install https://github.com/YOUR_USERNAME/design-claude-skills
+在 Claude Code 里输入：
+
+```
+/plugin install https://github.com/velyoo/design-claude-skills
 ```
 
-Or manually copy any skill folder into `~/.claude/skills/`.
+## 技能列表
 
-## Skills
+### i18n-layout — 多语言 UI 排版优化
 
-### i18n-layout — UI Multilingual Layout Optimizer
+把 Sketch 画板翻译成其他语言时，自动处理文字溢出、字号统一、标题组重排等问题。
 
-Handles translation of UI text layers in Sketch with automatic overflow detection, font-size normalization, and group repositioning.
+**直接告诉 Claude 就能触发，例如：**
+- "把选中的 Frame 翻译成俄语"
+- "翻译后文字溢出了，帮我修复"
+- "多个画板标题字号不一致"
 
-**Activates when you ask Claude to:**
-- Translate UI text layers to another language
-- Fix text overflow after localization
-- Adapt layouts for PT-BR, ES-LATAM, ID, DE, FR, RU
+**支持语言：** 葡萄牙语 · 西班牙语 · 印尼语 · 德语 · 法语 · 俄语
 
-**Supported languages:** Portuguese (BR/PT) · Spanish (LATAM) · Indonesian · German · French · Russian
+---
 
-See [`skills/i18n-layout/SKILL.md`](.claude/skills/i18n-layout/SKILL.md) for full documentation.
+> 需要 [Claude Code](https://claude.ai/claude-code) + Sketch MCP 插件
